@@ -4,16 +4,16 @@
 
 - Below images are result of `main.py`.(Lenna image is used here.)   
    
-    **1. Noise**
+    **1. Noise**   
 !['add gaussian noise'](./SNRdb10.png)  
 !['add gaussian noise'](./SNRdb20.png)  
 !['add gaussian noise'](./SNRdb30.png)
    
-    **2. histogram**
+    **2. histogram**   
 !['add gaussian noise'](./SNRdb10_histogram.png)  
 !['add gaussian noise'](./SNRdb20_histogram.png)  
 !['add gaussian noise'](./SNRdb30_histogram.png)
 
-    **3. Information entropy**
+    **3. Information entropy**   
 !['add gaussian noise'](./Entropy.png)  
  
