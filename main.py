@@ -3,14 +3,12 @@ from image_loader import ImageLoader as IL
 import matplotlib.pyplot as plt
 
 # ===================================== LOAD IMAGE =====================================
-
 origin_image = IL("lenna.png")()
 
 # change to gray scale.
 origin_image_gray = 0.2989 * origin_image[:, :, 0] + 0.5870 * origin_image[:, :, 1] + 0.1140 * origin_image[:, :, 2]
 
 # ===================================== ADD GAUSSIAN NOISE =====================================
-
 # stdev = 44.02  # SNR_db ~ 10 (SNR : 10)
 # stdev = 13.3  # SNR_db ~ 20 (SNR : 100)
 # stdev = 4.21  # SNR_db ~ 30 (SNR : 1000)
@@ -76,5 +74,13 @@ for SNR_db in SNRdb_10_20_30_stdev:
     plt.savefig("./SNRdb{}.png".format(SNR_db))
     plt.show()
 
-# ===================================== DRAW HISTOGRAM =====================================
-
+    # ===================================== DRAW HISTOGRAM =====================================
+    h_f = np.zeros(256)
+    for _x in range(noise_added.shape[0]):
+        for _y in range(noise_added.shape[1]):
+            h_f[int(noise_added[_x, _y])] += 1
+    plt.title("SNRdb {0:0.1f} brightness histogram".format(10 * np.log10(SNR)))
+    plt.bar(list(range(len(h_f))), h_f)
+    plt.xlim([0, 255])
+    plt.savefig("./SNRdb{}_histogram.png".format(SNR_db))
+    plt.show()
