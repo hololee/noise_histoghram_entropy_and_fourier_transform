@@ -1,4 +1,4 @@
-<h2>Image processing</h2>   
+<h1>Image processing</h1>   
 
 <h3> 1. Add noise, calculate histogram, calculate information entropy of gray scale image.</h3>   
 
