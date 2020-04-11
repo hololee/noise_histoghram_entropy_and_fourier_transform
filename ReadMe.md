@@ -21,7 +21,7 @@
  
 <h3>2. Add noise, calculate histogram, calculate information entropy of gray scale image.</h3>   
 
-- Below images are result of `main.py`.(Lenna image is used here.)
+- Below images are result of `main2.py`.
 
     **1. Target image**    
     !['Target_image'](./results/Target_image.png)
