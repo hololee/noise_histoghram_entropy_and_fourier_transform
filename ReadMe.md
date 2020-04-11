@@ -19,7 +19,7 @@
  
  ---
  
-<h3>2. Add noise, calculate histogram, calculate information entropy of gray scale image.</h3>   
+<h3>2. Draw power spectrum of image (using DFT) </h3>   
 
 - Below images are result of `main2.py`.
 
