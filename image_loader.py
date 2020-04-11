@@ -15,6 +15,5 @@ class ImageLoader(object):
             return self.img
         else:
             temp_image = Image.fromarray(self.img)
-            temp_image = temp_image.resize(
-                (int(self.img.shape[0] * resize_factor), int(self.img.shape[1] * resize_factor)))
+            temp_image = temp_image.resize((resize_factor[0], resize_factor[1]))
             return np.array(temp_image)
