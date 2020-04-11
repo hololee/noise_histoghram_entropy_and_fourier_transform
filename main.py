@@ -7,6 +7,7 @@ origin_image = IL("lenna.png")()
 
 # change to gray scale.
 origin_image_gray = 0.2989 * origin_image[:, :, 0] + 0.5870 * origin_image[:, :, 1] + 0.1140 * origin_image[:, :, 2]
+origin_image_gray = origin_image_gray.astype(np.int)
 
 entropy_list = []
 
@@ -73,7 +74,7 @@ for SNR_db in SNRdb_10_20_30_stdev:
     plt.title("Noise(SNRdb:{0:0.1f}, stdev:{1:4.2f})".format(10 * np.log10(SNR), stdev))
     plt.imshow(noise_added, 'gray')
     plt.axis("off")
-    plt.savefig("./SNRdb{}.png".format(SNR_db))
+    plt.savefig("./results/SNRdb{}.png".format(SNR_db))
     plt.show()
 
     # ===================================== DRAW HISTOGRAM =====================================
@@ -87,7 +88,7 @@ for SNR_db in SNRdb_10_20_30_stdev:
     plt.title("SNRdb {0:0.1f} brightness histogram".format(10 * np.log10(SNR)))
     plt.bar(list(range(len(h_f))), h_f)
     plt.xlim([0, 255])
-    plt.savefig("./SNRdb{}_histogram.png".format(SNR_db))
+    plt.savefig("./results/SNRdb{}_histogram.png".format(SNR_db))
     plt.show()
 
 
@@ -114,5 +115,5 @@ plt.xticks(np.arange(3), ["SNRdb:10", "SNRdb:20", "SNRdb:30"])
 for i in range(3):
     axes.text(i, entropy_list[i] + 0.012, str(entropy_list[i])[:6], ha='center', size=12, weight="bold", style="italic")
 plt.ylim([7.2, 7.8])
-plt.savefig("./Entropy.png")
+plt.savefig("./results/Entropy.png")
 plt.show()

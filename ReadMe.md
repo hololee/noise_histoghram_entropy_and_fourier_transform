@@ -5,15 +5,15 @@
 - Below images are result of `main.py`.(Lenna image is used here.)   
    
     **1. Noise**   
-!['add gaussian noise'](./SNRdb10.png)  
-!['add gaussian noise'](./SNRdb20.png)  
-!['add gaussian noise'](./SNRdb30.png)
+!['add gaussian noise'](./results/SNRdb10.png)  
+!['add gaussian noise'](./results/SNRdb20.png)  
+!['add gaussian noise'](./results/SNRdb30.png)
    
     **2. histogram**   
-!['add gaussian noise'](./SNRdb10_histogram.png)  
-!['add gaussian noise'](./SNRdb20_histogram.png)  
-!['add gaussian noise'](./SNRdb30_histogram.png)
+!['add gaussian noise'](./results/SNRdb10_histogram.png)  
+!['add gaussian noise'](./results/SNRdb20_histogram.png)  
+!['add gaussian noise'](./results/SNRdb30_histogram.png)
 
     **3. Information entropy**   
-!['add gaussian noise'](./Entropy.png)  
+!['add gaussian noise'](./results/Entropy.png)  
  
