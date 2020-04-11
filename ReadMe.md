@@ -19,7 +19,7 @@
  
  ---
  
-<h3>2. Draw power spectrum of image (using DFT) </h3>   
+<h3>2. Draw power spectrum of image. (using DFT) </h3>   
 
 - Below images are result of `main2.py`.
 
@@ -27,13 +27,17 @@
     !['Target_image'](./results/Target_image.png)
     
     **2. Power spectrum 2D**    
-    * Not centered.
+    
+    * Not centered.   
     !['Target_image'](./results/Power_spectrum_2D.png)   
-    * Centered.
+    
+    * Centered.   
     !['Target_image'](./results/Power_centered_spectrum_2D.png)    
     
     **3. Power spectrum 3D**    
-    * Not centered.
+    
+    * Not centered.   
     !['Target_image'](./results/Power_spectrum_3D.png)   
-    * Centered.
+    
+    * Centered.   
     !['Target_image'](./results/Power_centered_spectrum_3D.png)    
